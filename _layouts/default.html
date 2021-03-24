@@ -2,9 +2,12 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    
-    <link rel="stylesheet" href="/css/main.css">
-  
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <title> Death Stats </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css"> 
   </head>
 
 
@@ -16,11 +19,11 @@
         <li><a href="/vis">Visualisation</a></li>     
       </ul>
     </nav>
-<div class="container">
+  <div class="container">
 
-  {{ content }}
+    {{ content }}
 
-</div>
+  </div>
   
   <footer>
    @ NoodleSu
