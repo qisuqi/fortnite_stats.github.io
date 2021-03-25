@@ -20,5 +20,22 @@ title: Visualisation of the Total Deaths by Players
           <p>Click on the legend to see the stats for each players</p>
       </div>
     </section>
+    <section id="visulisations1">
+      <div class="row">
+        <div class="column">
+          <div id="vis1">
+            <script>
+                var spec = 'https://raw.githubusercontent.com/qisuqi/Fortnite/main/pie.dl.json';
+                vegaEmbed('#vis1', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <p>Click on the legend to see for each weapon</p>
+      </div>
+    </section>
+     
 
   </main>
