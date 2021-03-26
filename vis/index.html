@@ -16,18 +16,6 @@ title: Visualisation of the Total Deaths by Players
           </div>
         </div>
       </div>
-      <div class="row">
-         <div class="column">
-          <div id="vis4">
-            <script>
-                var spec = '/fortnite_stats.github.io/data/total_weaponname.aa.json';
-                vegaEmbed('#vi4', spec, {"height": 500}).then(function(result) {
-                }).catch(console.error);
-            </script>
-          </div>
-        </div>
-      </div>
-      </div>
     </section>
     <section id="visulisations1">
       <div class="row">
@@ -40,10 +28,16 @@ title: Visualisation of the Total Deaths by Players
             </script>
           </div>
         </div>
-      </div>
-      <div class="row">
-          <p>Click on the legend to see for each weapon name</p>
-      </div>
+         <div class="column">
+          <div id="vis4">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/total_weaponname.aa.json';
+                vegaEmbed('#vi4', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </div> 
+     </div>
     </section>
     <section id="visulisations2">
       <div class="row">
