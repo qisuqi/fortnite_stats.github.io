@@ -1,5 +1,20 @@
+---
+layout: default
+title: JellyBeanAndGone
+---
+
 <main>
     <section>
-      <h2> She no play :( </h2>
+      <div class="row">
+        <div class="column">
+          <div id="boulderman">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/jellybeanandgone.aa.json';
+                vegaEmbed('#boulderman', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
