@@ -21,4 +21,5 @@
     "opacity": {
       "condition": {"param": "Name", "value": 1},
       "value": 0.2
-}}}
+}},
+"view": {"stroke": null}}
