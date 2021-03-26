@@ -36,6 +36,22 @@ title: Visualisation of the Total Deaths by Players
           <p>Click on the legend to see for each weapon</p>
       </div>
     </section>
+    <section id="visulisations2">
+      <div class="row">
+        <div class="column">
+          <div id="vis2">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
+                vegaEmbed('#vis2', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <p>Click on the legend to see for each weapon</p>
+      </div>
+    </section>
      
 
   </main>
