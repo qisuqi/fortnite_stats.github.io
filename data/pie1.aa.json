@@ -12,6 +12,9 @@
     "select": {"type": "point", "fields": ["Weapon Color"]},
     "bind": "legend"
   }],
+"transform": [
+    {"filter": "datum['Weapon Color'] != 'NC'"}
+],
 "encoding": {
     "theta": {"aggregate":"count"},
     "color": {"field": "Weapon Color", "type": "nominal", "scale": {"domain": ["White", "Green", "Blue", "Purple", "Gold", "NC"], "range": ["Silver", "Green",  "Blue", "Purple", "Gold", "Black"]}},
