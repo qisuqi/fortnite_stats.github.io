@@ -3,23 +3,26 @@ layout: default
 title: Ham08
 ---
 
-<main>
-    <section>
-      <div class="row">
-        <div class="column">
-          <div id="ham">
+    <section class="page-content">
+      <section class="search">
+        <form>
+          <input type="search" placeholder="Search...">
+          <button type="submit" aria-lable="submit form">
+          </button>
+        </form>
+      </section>
+      <section class="grid">
+        <article></article>
+        <article>
+           <div id="ham">
             <script>
                 var spec = '/fortnite_stats.github.io/data/ham08.aa.json';
                 vegaEmbed('#ham', spec, {"height": 500}).then(function(result) {
                 }).catch(console.error);
             </script>
           </div>
-        </div>
-      </div>
-    </section>
-     <section>
-      <div class="row">
-        <div class="column">
+        </article>
+        <article>
           <div id="ham1">
             <script>
                 var spec = '/fortnite_stats.github.io/data/ham08_pie.aa.json';
@@ -27,7 +30,10 @@ title: Ham08
                 }).catch(console.error);
             </script>
           </div>
-        </div>
-      </div>
-    </section>
- </main>
+        </article>
+        
+
+         
+        
+          
+        
