@@ -15,7 +15,7 @@
 ],
 "encoding": {
     "theta": {"aggregate":"count"},
-    "color": {"field": "Weapon Color", "type": "nominal", "scale": {"domain": ["White", "Green", "Blue", "Purple", "Gold", "NC"], "range": ["Silver", "Green",  "Blue", "Purple", "Gold", "Black"]}},
+    "color": {"field": "Weapon Color", "type": "nominal", "scale": {"domain": ["White", "Green", "Blue", "Purple", "Gold", "NC", "Mythic"], "range": ["Silver", "Green",  "Blue", "Purple", "Gold", "Black", "##eded8a"]}},
     "opacity": {
       "condition": {"param": "Name", "value": 1},
       "value": 0.2
