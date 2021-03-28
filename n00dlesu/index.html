@@ -3,10 +3,17 @@ layout: default
 title: N00dleSu
 ---
 
-<main>
-    <section>
-      <div class="row">
-        <div class="column">
+    <section class="page-content">
+      <section class="search">
+        <form>
+          <input type="search" placeholder="Search...">
+          <button type="submit" aria-lable="submit form">
+          </button>
+        </form>
+      </section>
+      <section class="grid">
+        <article></article>
+        <article>
           <div id="noodlesu">
             <script>
                 var spec = '/fortnite_stats.github.io/data/n00dlesu.aa.json';
@@ -14,12 +21,8 @@ title: N00dleSu
                 }).catch(console.error);
             </script>
           </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="row">
-        <div class="column">
+        </article>
+        <article>
           <div id="noodlesu1">
             <script>
                 var spec = '/fortnite_stats.github.io/data/n00dlesu_pie.aa.json';
@@ -27,7 +30,10 @@ title: N00dleSu
                 }).catch(console.error);
             </script>
           </div>
-        </div>
-      </div>
-    </section>
- </main>
+        </article>
+        
+
+          
+        
+          
+        
