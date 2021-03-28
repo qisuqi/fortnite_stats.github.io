@@ -2,44 +2,55 @@
 layout: default
 title: Fortnite Death Stats
 ---  
+<header class="page-header">
+      <nav>
+        <ul class="player-menu">
+          <li class="menu-heading">
+            <h3>Players</h3>
+          </li>
+          <li><a href="D:\Fortnite\pages\anicetnetennba.html">A Nice Tnetennba</a></li>
+          <li><a href="D:\Fortnite\pages\boulderman94.html">Boulderman69</a></li>
+          <li><a href="D:\Fortnite\pages\ham08.html">Pum08</a></li>
+          <li><a href="D:\Fortnite\pages\jellybeanandgone.html">JellyBeanAndGone</a></li>
+          <li><a href="D:\Fortnite\pages\n00dlesu.html">N00dleSU</a></li>
+          <li><a href="D:\Fortnite\pages\rakdoz.html">Rakdoz</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section id="home">
-      <div class="section-inner">
-          <img src="https://lh3.googleusercontent.com/OdSN0nEBncM2GgxjpoaxWfSMgZcqJCdGgwWamVzDVNwRdcVeQ7jwW5jwQKyeqShU-_BVazXgCa8R1drL-7FKXVSCZY2YXfheUpBvZrmg8ilCuL7WvirVgym8CeReeR8rrMTeuUASTt_RGVm0f2dpeOKDq-Qm10JPgMI_l5Gi3IuRQZoguCfzSDOUd3UEf83dcG5XrN9xNuccRxL5yrK5z9LgTJUu4pJV7kK9H-SzXkLKIZs1NlB1fJNxLJ33bUIk5g-kJpohUT98z0S2vI2vuIL5K2-LDP45GkGzukIEGrCCGDxFpNX99q8AI2SYsqBzR8tarLyut03cHaj_O2NhuadEOLNJAiYT_ImbifPFFDq2yiloKS4cAZ72ML17xpM15INCkelWivzrZFzZVwwoT3BzsWLAg9yappGEDWoJRADJzqAVnqYJ4TLYlhUYximRoSnRLS9L-vIyziXuPF8jP1orBwbWB-ipZx4Vdwg1MirlY0puCcmqenVHF7PqjeqIwQsaQLwCuWXmlPIdpBb_a8yUdtNzJ0KfTTKkZq-Nif_arc4wM77dxbZp4GIKzZWXH_2mZQ-FN6jaDDoE1Ha8b2UuLnt4uDhBLXkmXc3tK4AeE_AZSXyvqzu8PqstaBSTqTIDNoRt8Ukhcu0qUAxtWL1U-ZgwApYAi6fNWAaFKB1LSE_i9fg9QA9zd-zfN5hlF3mLVVIkztrOFGCr1mvPx2Q=w1723-h969-no?authuser=0" class="profile-img">
-      </div>
+    <section class="page-content">
+      <section class="search">
+        <form>
+          <input type="search" placeholder="Search...">
+          <button type="submit" aria-lable="submit form">
+          </button>
+        </form>
+      </section>
+      <section class="grid">
+        <article>
+          <div id="vis">
+            <script>
+                var spec = 'https://raw.githubusercontent.com/qisuqi/Fortnite/main/totaldeaths.vl.json';
+                vegaEmbed('#vis', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="pie">
+            <script>
+                var spec = 'https://raw.githubusercontent.com/qisuqi/Fortnite/main/pie.dl.json';
+                vegaEmbed('#pie', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
     </section>
-    
-   <section id="players">
-     <div class="row">
-        <h2> The Players </h2>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/0S--BrIU8uxkOtDnjaGtRvPQUpDWde93zuq7dcY_llXlv-u1e0ER-6II95NlPSytrCLVaPWwgC_wmn57RtxPtWSM5byPEK5Q9UMTEl71_SkCP3qR8dxMb5HqPPNXuwKWCq3zLerGtuajS_7WnOmxri5YU6-_XqE5cWZfZnWXs0ufpqjEzDDEphav3K_CMMyDxZqPHoppkKZNEuo3ItqDoRcrme1jHgMlIPIanhF9rCEkMrDBJrD9YrR6grXAPf9L64JKPXpFazo1fle9LqEN9iewIw0NyYyEieNUKQcBDeDG0JsSWCh9Tbp58bQDqBtIeGcYKHEhyzDR731BtzoBD0Pz0B5wnElazchBfvQcRoss0WVQKC5rAJ9KNaigPnBlANhLtAXfanbMeRTnrKoQX8R-HVb9n23dMzAcnF6AEJHhOzwpsSlL7w2J45BrjCw0zMsePNrpBtoHreWaQv919NLcy6cal2hwqGHdVF-k3U_kB2eAXCVCIwLd8y8_OIRk0JMVb1HaOwo7BuKBucAgpsTgN2z7dZXZMtly9s8IpD39cegrqA4UKrXwmrOeRZR3ltOSkzI2-GmPes8_OLsgCKvAW1yf3D1m8liNvNemsxD4hSaIuniu5eSYITS458X2ymeAPnAR6k68MBmhmTWXeuKiKKYeZ3YiSzAraKolhGNbgT0fRQ_xFu3CSbxBmic9VFnR3hCGZPAXF4f9gSlyttI=s960-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/n00dlesu'><button class="button">N00dleSu</button></a>
-        </div>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/EWDcls7cW45jL61u7h79tNpG88WvPMxm1tmqnW5QmM71kFLK3q4eLAJwDSbpBxbqNUSWhPJYdnhPteclaULPMo8OxA7M97s76JwicfBqtaBy1koemek0KqNr-66RDyyD4A_9iNtLtrns_IorfwXj3D6-xevKRzMZSHN48dlZS9ZwaQF3wVZU_I6_1gi_dBBkepwfOODd0nqOukqjlRpS1A6iYMTQSMk7_4qv24XqBGkCcep9-57DXZUdpp4rKcESJBjULqaTZo0GSTkHmv5_wja9gGn1CfWnEoJZ1rTVf31KBO56VRPK-x_IQi1eI3yo9JWQHIoSH2BNVKxoVx9__wM1EGPAW95aLRl5aeMUUQRJp9GkRTDLgNHG1ZSG7SxFLh-6bGsmGb3P7Zth46w-yvmVfcdKAl00dbVc9zJNtWLz_-cF3qSUaK4o8r3pNnDoQ-tIlrUjxK4AYnzhPqDL3EVLM0em5ay2OFbNa80JgGkiKN3Oy3GRf2uj6Mf5F5CLrYvUBryxvdtmsd60H7ItSyv6IuIwSXcQVDhC2LHsKDQ8d8EW5HLDh4TEiGaF4Z9eyJbIB3xyoWXDd3NW1oeYqSFS8248SMiu3IrCPheYUpaK4xMy-dJr0DsUJdoMKaDgW85AEPDuyHy0m7QxT4cK34hEofv5UD9GVfTh5w9lq4t2V1Wf777zUSwadFARwdvc3v53hALclTElgwq7Ev5VGbA=s768-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/anicetnetennaba'><button class="button">A Nice Tnetennba</button></a>
-        </div>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/4qrgP0vRnF-Jzn-Rc7hEWzEcl3DYl6_pYyszF4YEllnJ4133r9VCcRkCXayDhEU3xS6BEfeRgnj-DsPXgsjc3VBtwYTmsh1mLDw230Sbw8GQ1BchxbFukhq19JXxB0y3i_vVWFSFq5SCwy-rslprvlOm4a1-2K_dQAaBnV82Ivlkatf1Jh-oiE0YbDKUN5f7s7HuNywPHoch0CuuBYc2AbZPPKI1uK3Yv0WgpMtZkNntuwMdLb6X0SJKtNPrwlNL8ZxvvS6rrBadfJCmzq8uicWfuEs9-Flfmyg9qrPgBVis3a6tQ2Un-JpqgmOH7kphQw170CRO9sdT_viWbksHU7F3xJesbR6efMEVi8LJrGm9KSwYHhfxb7G_haOI5myupjCQl3BbpMsLrwTUiXrvd8u9hwBOF1KocFEtU0fBXS05NMw2PFeOROlqi_NpHmhjJavPd1ULeJ4cJhBuQPN2Ez9l0z6uC92HzrjvCvOF_nSsF3rLPHWNT6Td_vNKWvOdF0MwuD0hHZLg-tYkZ4DUQc5RwoD5TllYx5JayX9-dkuIeCmMr3dJQD00RvZDEqWwRr4iXlfjtrUX24ma3P5EOpkDFAbutlvEH_TVXif9Ug5xAOprVI6Pb7WCXgHqre7OC0P0wLpVYqEzES-9smqP4BD2ClIqbZspYT4QsWVSj6wqAHs51L4246IQUkWC7QKyPUR3XLGciqJ-L5iOWZqeQlY=s969-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/boulderman94'><button class="button">Boulderman69</button></a>
-        </div>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/PCpOBeye1l_z2mvvL0XceXca4I1kL3Ls3cU3kvbkv_sNbQ0fgHzCw85VrmTN4V4AHtI1vsv8652uJoOE9PyE1fBHhwz4y-WPV1TzAs3uYh6fLUCvXiUNPrp6GC_lh0p8-7mP6D9C5AzDyrp3uMMzFNs349Pn_eHAqZZcxvv7wQVSaMBPGd92uMLUcJQ83BKQqxJV9BEzYF4MTaic29cdNeIrQRt1IwdNtfco-L0D4Ol-ayLSCfF4CK726imA2PLY5KZkKcLZmUV7_8-NXjQ1ZApGwQWtyaAKs7iexqYQqb3f_cWCIdljsZOpEy6MVXNmASs5R7cEmKkJ3uX_dXD6rydd4mPya61dgtUuN74HerpfSrncOHsta7udNixJe8Yi9_5hJRAoVkX5MqvwoIG-P3V4f96-GSIw6NMXMx5VZPKR4HTXDD8OEm_uG_D5s7U1zZsF1eEYy1ErvZTaoj3aiJsIbjQMGBCbD-3Tj-l7rwOwybAYTXbsORAI0eW6GMdihtAQaEnYk1liRPpir4pPleFk567h70VSY-Ohf437TF2OdVhyVmu6Lv7O8gIKXOhNSY7HC1RCZz9W9mIKYQ14abZRTlzoDkn2beO1cNMJgfNWFAzyuopm-16b5wpJsFNuhind369ISPlo4Dqg9GDz5Dj9mTHOGHkQRXg0oHRZ7ZZYWAntNuinzKjPXpuK0SH63gS0x0qoU1gECzLEnn5NrJE=s969-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/ham08'><button class="button">Ham08(the pum)</button></a>
-        </div>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/NsmZsrkoRx7ocjh8X0dolP0z00V0sMixCNyFbVY2cyNwr1uNk_-cdkN9czSo90gFwiNYxqruYcz8yjKM0Z6gyZgSi06O-BPqWGgQbHMuVpqtv6QwDWwE9HGhNgn-VctdrT2Hagx5jerqIshfIlI8NPS1Wd0sKuhaQvRd1Vukmwkq_4fapw_5o7ClRIT6zxzLxThvBaB7PgkYLQpZ2IZYampQpONDjr3EtS83F4-fDlwK7HjZ09YhT9GJ0TpvzBlk7JGrqIRQ_Vf7cZCa9wrFTMTYRd0hxenQN3JGlIrz2LkvQgexXyb3zjeiUthHozICAcuxo4So-cipibhHoaajQhrbgB8Lik3cV5R_WgP6WZokrWS4ejRMbwMMhkhSP8CmftabArWGJJkZDUss-S2jCrgEiqyCCJTR6DpQi8Xphn7PsjAMDhoAPVBOWZV38_qk_1h5QFaWzojtaXCtXvxG583ra4Chnlnc5r6Y1Q58MEC64vuYle10XFAtfNqZsrjAz622es4SMNoht2ZuyCw9tlpjhL6UJ1bF-6u6ZsTVR018dGwETe9FFj9Ca_R9rJjHn22nwhyWWMntiIk2mQyAvhUB5e2tKOl-pU3aHPus0HzdPkqsTghwk9J8t0Y2esa3GmL9QZhzwc1iC4DWn1P04d9OwpbRAhUS5K0dNUCnDFRrxwZyN5oMDFYCE0iC0Ze6gn1gn-4WV3gmJrX3_d0qN54=s647-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/jellybeanandgone'><button class="button">JellyBeanAndGone</button></a>
-        </div>
-        <div class="column">
-          <img src="https://lh3.googleusercontent.com/2FTxGSRxgOcNdiQneqtT6wMzVVC4tbwqN7giSqMOUhvXCN-zlGmo6sTKDpp5ma-7vv_FTqB5quVN6HLEfjaXWeItO4CeKx6upSxwqlE0kX8F29PfyR5zAVBFB32QUH4zKem7481U-mo9mpXWtyaDx5_cQAvsxbJ-3CofqDwjT8FYUDcXvBOKUiQ4sGTkfdMafAm26M8LQS8JcdQMuNu-Im7wKOPqjtRaJb8vjVhKaV2ugioRORb2LpCp_kMO_STARnRT9MaAxIzUK6rOmIUOhveIX1IpRMaCB1uVIcc1VxbemAbdd0mEmp2zwhXv7GxsLM_kziVRDrE09EVkQRVznYJERzaeCNlJCl71X7vo4i-YTaY4EC4Dl8kSCSC9W4ksiLUsH5tSC8HmMXy6Z3MI3mYJMJDgYcU8TTpQNxG8y9roo8wh23UCxJTTDsOuvQKwBz60PTCRlilHn-2jdNHsN7CTwfz00gPfqm3gSnGo3R6zj7brURArim-i94iMIowR-_RUKpSK9iSg1zUmPVGW0fznpJN24DwOKGLu-Y3gif-8097ZREf5ETdqRyIb5etv6wA3_NuPO_1n_YdRin8Ys-044W8ntatT9TBLSwsIGMlPOOz-PmNEuqzBzXJnFOwbnGRLJzS1BIkBMxL3eM6pogaLI5SPT9J7mu1eTUkbXUFiCQBNQtBaHjyFfmpfAMOqLVV_zECVkH_RvENcf86opVs=s969-no?authuser=0" class="profile-img" style="width:100%">
-          <a href='/fortnite_stats.github.io/rakdoz'><button class="button">Rakdoz</button></a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
 
