@@ -14,7 +14,7 @@ title: Fortnite Death Stats
         <article>
           <div id="vis">
             <script>
-                var spec = 'https://raw.githubusercontent.com/qisuqi/Fortnite/main/totaldeaths.vl.json';
+                var spec = '/fortnite_stats.github.io/data/totaldeaths.aa.json';
                 vegaEmbed('#vis', spec, {"height": 500}).then(function(result) {
                 }).catch(console.error);
             </script>
@@ -23,17 +23,47 @@ title: Fortnite Death Stats
         <article>
           <div id="pie">
             <script>
-                var spec = 'https://raw.githubusercontent.com/qisuqi/Fortnite/main/pie.dl.json';
+                var spec = '/fortnite_stats.github.io/data/pie.aa.json';
                 vegaEmbed('#pie', spec, {"height": 500}).then(function(result) {
                 }).catch(console.error);
             </script>
           </div>
         </article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <article>
+           <div id="vis1">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/total_weaponname.aa.json';
+                vegaEmbed('#vis1', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="pie1">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/pie1.aa.json';
+                vegaEmbed('#pie1', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="vis2">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/total_weaponcolor.aa.json';
+                vegaEmbed('#vis2', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="vis3">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
+                vegaEmbed('#vis3', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
       </section>
     </section>
