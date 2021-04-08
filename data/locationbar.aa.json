@@ -1,0 +1,23 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"description": "A simple bar chart with embedded data.",
+"title": "Total Deaths Count",
+"width": 1000, "height": 700,
+"data": {},
+"mark": "bar",
+"params": [{
+    "name": "Name",
+    "select": {"type": "point", "fields": ["Location"]},
+    "bind": "legend"
+  }],
+"transform": [
+    {"filter": "datum['Location'] != 'NP'"}
+],
+"encoding": {
+    "y": {"aggregate":"count"},
+    "x" : {"field": "Location", "type": "nominal"},
+    "color": {"field": "Location", "type": "nominal"},
+    "opacity": {
+      "condition": {"param": "Name", "value": 1},
+      "value": 0.2
+}}}
