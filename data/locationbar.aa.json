@@ -16,7 +16,7 @@
 "encoding": {
     "y": {"aggregate":"count"},
     "x" : {"field": "Location", "type": "nominal"},
-    "color": {"field": "Location", "type": "nominal"},
+    "color": {"field": "Location", "type": "nominal", "scale": {"scheme": "tableau20"}},
     "opacity": {
       "condition": {"param": "Name", "value": 1},
       "value": 0.2
