@@ -57,6 +57,15 @@ title: Fortnite Death Stats
           </div>
         </article>
         <article>
+          <div id="pie2">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/pie2.aa.json';
+                vegaEmbed('#pie1', spec, {"height": 500, "width": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
           <div id="vis3">
             <script>
                 var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
