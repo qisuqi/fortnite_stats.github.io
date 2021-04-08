@@ -1,0 +1,21 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+"description": "A simple bar chart with embedded data.",
+"title": "Total Deaths for all Players",
+"width": 1000, "height": 700,
+"data": {"url": "/fortnite_stats.github.io/data/data.json"},
+"mark": "bar",
+"params": [{
+    "name": "Name",
+    "select": {"type": "point", "fields": ["Weapon Type"]},
+    "bind": "legend"
+  }],
+"encoding": {
+    "x": {"field": "Weapon Type", "type": "nominal"},
+    "y": {"aggregate": "count"},
+    "color": {"field": "Weapon Type", "type": "nominal", "scale": {"scheme": "tableau20"}},
+    "opacity": {
+      "condition": {"param": "Name", "value": 1},
+      "value": 0.2
+}}
+}
