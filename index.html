@@ -77,8 +77,17 @@ title: Fortnite Death Stats
         <article>
           <div id="vis4">
             <script>
+                var spec = '/fortnite_stats.github.io/data/location.aa.json';
+                vegaEmbed('#vis4', spec, {"height": 500, "width": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="vis5">
+            <script>
                 var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
-                vegaEmbed('#vis4', spec, {"height": 500}).then(function(result) {
+                vegaEmbed('#vis5', spec, {"height": 500, "width":600}).then(function(result) {
                 }).catch(console.error);
             </script>
           </div>
