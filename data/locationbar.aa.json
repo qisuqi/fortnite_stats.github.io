@@ -3,7 +3,7 @@
 "description": "A simple bar chart with embedded data.",
 "title": "Total Deaths Count",
 "width": 1000, "height": 700,
-"data": {},
+"data": {"url": "/fortnite_stats.github.io/data/data.json"},
 "mark": "bar",
 "params": [{
     "name": "Name",
