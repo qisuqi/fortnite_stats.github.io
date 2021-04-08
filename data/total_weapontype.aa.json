@@ -11,7 +11,8 @@
     "bind": "legend"
   }],
 "transform": [
-    {"filter": "datum['Weapon Type'] != 'NT'"},
+    {"filter": "datum['Weapon Type'] != 'NT'"}
+    ],
 "encoding": {
     "x": {"field": "Weapon Type", "type": "nominal"},
     "y": {"aggregate": "count"},
