@@ -11,7 +11,8 @@
     "bind": "legend"
   }],
 "transform": [
-    {"filter": "datum.Name == 'A Nice Tnetennba'"}
+    {"filter": "datum.Name == 'A Nice Tnetennba'"},
+    {"filter": "datum['Weapon Type'] != 'NT'"}
 ],
 "encoding": {
     "theta": {"aggregate":"count"},
