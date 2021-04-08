@@ -60,7 +60,7 @@ title: Fortnite Death Stats
           <div id="pie2">
             <script>
                 var spec = '/fortnite_stats.github.io/data/pie2.aa.json';
-                vegaEmbed('#pie1', spec, {"height": 500, "width": 500}).then(function(result) {
+                vegaEmbed('#pie2', spec, {"height": 500, "width": 500}).then(function(result) {
                 }).catch(console.error);
             </script>
           </div>
@@ -68,8 +68,17 @@ title: Fortnite Death Stats
         <article>
           <div id="vis3">
             <script>
-                var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
+                var spec = '/fortnite_stats.github.io/data/total_weapontype.aa.json';
                 vegaEmbed('#vis3', spec, {"height": 500}).then(function(result) {
+                }).catch(console.error);
+            </script>
+          </div>
+        </article>
+        <article>
+          <div id="vis4">
+            <script>
+                var spec = '/fortnite_stats.github.io/data/timeline.aa.json';
+                vegaEmbed('#vis4', spec, {"height": 500}).then(function(result) {
                 }).catch(console.error);
             </script>
           </div>
