@@ -15,7 +15,7 @@
 ],
 "encoding": {
     "theta": {"aggregate":"count"},
-    "color": {"field": "Weapon Type", "type": "nominal"},
+    "color": {"field": "Weapon Type", "type": "nominal", "scale": {"scheme": "tableau20"}},
     "opacity": {
       "condition": {"param": "Name", "value": 1},
       "value": 0.2
