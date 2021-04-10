@@ -11,7 +11,7 @@
     "bind": "legend"
   }],
 "encoding": {
-  "x": {"field": "Date", "type": "ordinal"},
+  "x": {"field": "Date", "type": "temporal",  "axis": {"format": "%d/%m", "grid": false}},
   "y": {"aggregate": "count", "title": "Deaths"},
   "tooltip": {"aggregate": "count"},
   "color": {"field": "Weapon Name", "type": "nominal", "scale": {"scheme": "tableau20"}},
