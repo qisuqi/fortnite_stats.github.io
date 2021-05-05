@@ -136,7 +136,10 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-.page-content .grid > article:first-child,
+.page-content .grid > article:first-child{
+  grid-column: 1 / 4;
+}
+
 .page-content .grid > article:last-child {
   grid-column: 1 / -1;
 }
